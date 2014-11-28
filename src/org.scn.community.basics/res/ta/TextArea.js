@@ -1,8 +1,8 @@
 /**
- * Copyright 2014 Karol Kalisz
+ * Copyright 2014 Scn Community Contributors
  * 
  * Original Source Code Location:
- *  https://github.com/KarolKalisz/DesignStudioSdkPack
+ *  https://github.com/sap-design-studio-free-addons/sdk-package
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  * you may not use this file except in compliance with the License. 

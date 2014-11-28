@@ -1,8 +1,8 @@
 /**
- * Copyright 2014 Karol Kalisz
+ * Copyright 2014 Scn Community Contributors
  * 
  * Original Source Code Location:
- *  https://github.com/KarolKalisz/DesignStudioSdkPack
+ *  https://github.com/sap-design-studio-free-addons/sdk-package
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  * you may not use this file except in compliance with the License. 
@@ -19,10 +19,10 @@
 
 jQuery.sap.require("sap.ui.core.IconPool");
 
-var org_kalisz_karol_scn_ui5basics_FioriButton = org_kalisz_karol_scn_ui5basics_FioriButton || {};
+var org_scn_community_basics_FioriButton = org_scn_community_basics_FioriButton || {};
 
-if(!org_kalisz_karol_scn_ui5basics_FioriButton.registeredStyles){
-	org_kalisz_karol_scn_ui5basics_FioriButton.registeredStyles = org_kalisz_karol_scn_ui5basics_FioriButton.registeredStyles || "";	
+if(!org_scn_community_basics_FioriButton.registeredStyles){
+	org_scn_community_basics_FioriButton.registeredStyles = org_scn_community_basics_FioriButton.registeredStyles || "";	
 }
 
 (function() {
@@ -102,9 +102,9 @@ sap.ui.commons.Button.extend("org.scn.community.basics.FioriButton", {
 		this.setTooltip(tooltip);
 				
 		// check if already registered, mark if not
-		if(org_kalisz_karol_scn_ui5basics_FioriButton.registeredStyles.indexOf("."+icon) == -1){
+		if(org_scn_community_basics_FioriButton.registeredStyles.indexOf("."+icon) == -1){
 			// append this style, add the style to list of registered styles
-			org_kalisz_karol_scn_ui5basics_FioriButton.registeredStyles = org_kalisz_karol_scn_ui5basics_FioriButton.registeredStyles + "."+icon;
+			org_scn_community_basics_FioriButton.registeredStyles = org_scn_community_basics_FioriButton.registeredStyles + "."+icon;
 			$( "<style>.sf"+icon+":before{content:'\\"+icon+"';}</style>" ).appendTo("head");	
 		}
 		

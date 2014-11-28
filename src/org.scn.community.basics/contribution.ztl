@@ -422,7 +422,7 @@ class org.scn.community.basics.TextArea extends Component {
 /**
  * Class for ToggleButton
  */
-class org.kalisz.karol.scn.ui5basics.ToggleButton extends Component {
+class org.scn.community.basics.ToggleButton extends Component {
 	/** returns the pressed state 
     <example>
 	You want to get the pressed state to decide what to do

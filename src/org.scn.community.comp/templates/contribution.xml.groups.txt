@@ -1,0 +1,4 @@
+
+	<group
+		id="ScnCommunityComp"
+		title="Scn Community Components"/>

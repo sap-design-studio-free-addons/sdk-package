@@ -114,3 +114,92 @@ class org.scn.community.shared.KeyLabelValue {
 class org.scn.community.shared.KeyLabelValueArray extends Array {
 	org.scn.community.shared.KeyLabelValueArray (org.scn.community.shared.KeyLabelValue b);
 }
+
+/**
+	Holder for Key, Label, Value + param1, param2, param3. You can access the content as in below example.
+	<br>
+	var content = COLLECTION_1.getAsKeyLabelValueProperty();<br>
+	
+	// a loop for all entries<br>
+	// content is of type org.scn.community.shared.KeyLabelValuePropertyArray<br>
+	content.forEach(function(element, index) {<br>
+	
+		// element is of type org.scn.community.shared.KeyLabelValueProperty<br>
+		var elKey = element.key;<br>
+		var elLabel = element.label;<br>
+	 	var elValue = "( " + element.value + " )");<br>
+	 	<br>
+	 	var param1 = element.property1;<br>
+	 	var param2 = element.property2;<br>
+	 	var param3 = element.property3;<br>
+	});
+ */
+class org.scn.community.shared.KeyLabelValueProperty {
+	String key;
+	String label;
+	float value;
+	String prop1;
+	String prop2;
+	String prop3;
+}
+
+/**
+Array for org.scn.community.shared.KeyLabelValueProperty. You can use this array as in below example.
+<br>
+var content = COLLECTION_1.getAsKeyLabelValuePropertyArray();<br>
+<br>
+// a loop for all entries<br>
+// content is of type org.scn.community.shared.KeyLabelValuePropertyArray<br>
+content.forEach(function(element, index) {<br>
+
+	// element is of type org.scn.community.shared.KeyLabelValueProperty<br>
+	var elKey = element.key;<br>
+	var elLabel = element.label;<br>
+ 	var elValue = "( " + element.value + " )");<br>
+ 	<br>
+ 	var param1 = element.prop1;<br>
+ 	var param2 = element.prop2;<br>
+ 	var param3 = element.prop3;<br>
+ });
+*/
+class org.scn.community.shared.KeyLabelValuePropertyArray extends Array {
+	org.scn.community.shared.KeyLabelValuePropertyArray (org.scn.community.shared.KeyLabelValueProperty b);
+}
+
+/**
+	Holder for value. You can use the content as in below example.
+	<br>
+	var content = COLLECTION_1.getAsValueTextArray();<br>
+	<br>
+	// a loop for all entries<br>
+	// content is of type org.scn.community.shared.ValueTextArray<br>
+	content.forEach(function(element, index) {<br>
+	
+		// element is of type org.scn.community.shared.ValueText<br>
+		var elValue = element.value;<br>
+		var elText = element.text;<br>
+	});
+*/
+class org.scn.community.shared.ValueText {
+  String value;
+  String text;
+}
+
+/**
+	Array for org.scn.community.shared.ValueText. You can use this array as in below example.
+	<br>
+	var content = ARRAY_1.getAsValueTextArray();<br>
+	<br>
+	// a loop for all entries<br>
+	// content is of type org.scn.community.shared.ValueTextArray<br>
+	content.forEach(function(element, index) {<br>
+	
+		// element is of type org.scn.community.shared.ValueText<br>
+		var elValue = element.value;<br>
+		var elText = element.text;<br>
+	});
+*/
+class org.scn.community.shared.ValueTextArray extends Array {
+	org.scn.community.shared.ValueTextArray (org.scn.community.shared.ValueText b);
+}
+

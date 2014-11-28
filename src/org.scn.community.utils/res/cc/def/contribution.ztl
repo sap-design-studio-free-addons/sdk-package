@@ -1,3 +1,4 @@
+
 class org.scn.community.utils.CustomCssCollector extends Component {
 	
 	/**

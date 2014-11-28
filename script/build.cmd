@@ -14,3 +14,8 @@ set module=org.scn.community.basics
 cd ..\src\%module%\script\
 call build.cmd
 cd %current%
+
+set module=org.scn.community.comp
+cd ..\src\%module%\script\
+call build.cmd
+cd %current%
