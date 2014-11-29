@@ -181,7 +181,7 @@ sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.comp.MenuButton",
 
 		// resize function
 		this.onAfterRendering = function() {
-			org_kalisz_karol_scn_pack.resizeContentAbsoluteLayout(that, this._oMenuButton);
+			org_scn_community_shared.resizeContentAbsoluteLayout(that, this._oMenuButton);
 		};
 	},
 	

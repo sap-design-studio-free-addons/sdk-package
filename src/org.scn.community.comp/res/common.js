@@ -21,9 +21,9 @@
  * Global Functions for work with components
  */
 
-var org_kalisz_karol_scn_pack = org_kalisz_karol_scn_pack || {};
+var org_scn_community_shared = org_scn_community_shared || {};
 
-org_kalisz_karol_scn_pack.resizeContentAbsoluteLayout = function (parent, mainObject) {
+org_scn_community_shared.resizeContentAbsoluteLayout = function (parent, mainObject) {
 	if(parent._oContentPlaced != true) {
 		var jqThis = parent.$();
 		
