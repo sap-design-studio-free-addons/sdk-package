@@ -7,7 +7,7 @@
 	group="ScnCommunityComp"
 >
 
-	<jsInclude>res/_ut/Global.js</jsInclude>
+	<jsInclude>res/common.js</jsInclude>
 	<jsInclude>res/mbt/MenuButton.js</jsInclude>
 	<cssInclude>res/mbt/MenuButton.css</cssInclude>
 
