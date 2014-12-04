@@ -4,7 +4,7 @@
 	title="Check Box Group"
 	icon="res/cbg/CheckBoxGroup.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 	<jsInclude>res/cbg/CheckBoxGroup.js</jsInclude>
 	<cssInclude>res/cbg/CheckBoxGroup.css</cssInclude>

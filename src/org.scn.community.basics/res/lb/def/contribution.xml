@@ -4,7 +4,7 @@
 	title="Leader Board"
 	icon="res/lb/LeaderBoard.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 	<jsInclude>res/lb/LeaderBoard.js</jsInclude>
 	<cssInclude>res/lb/LeaderBoard.css</cssInclude>

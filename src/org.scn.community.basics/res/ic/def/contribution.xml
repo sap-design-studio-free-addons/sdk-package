@@ -4,7 +4,7 @@
 	title="Image Carousel"
 	icon="res/ic/ImageCarousel.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 	<jsInclude>res/ic/ImageCarousel.js</jsInclude>
 	<cssInclude>res/ic/ImageCarousel.css</cssInclude>

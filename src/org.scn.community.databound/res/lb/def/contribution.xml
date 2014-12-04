@@ -1,10 +1,10 @@
 
 <component
-	id="DataLeaderBoard"
+	id="LeaderBoard"
 	title="Data Leader Board"
 	icon="res/lb/DLeaderBoard.png"
 	handlerType="sapui5"
-	group="ScnCommunityRsBound"
+	group="ScnCommunityDataBound"
 	databound="true"
 >
 

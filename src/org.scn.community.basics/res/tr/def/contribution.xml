@@ -4,7 +4,7 @@
 	title="Tree"
 	icon="res/tr/Tree.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 	<jsInclude>res/tr/Tree.js</jsInclude>
 	<cssInclude>res/tr/Tree.css</cssInclude>

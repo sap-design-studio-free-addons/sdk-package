@@ -4,7 +4,7 @@
 	title="Accordion"
 	icon="res/ac/Accordion.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 	<jsInclude>res/ac/Accordion.js</jsInclude>
 	<cssInclude>res/ac/Accordion.css</cssInclude>

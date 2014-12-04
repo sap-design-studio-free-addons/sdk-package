@@ -1,10 +1,10 @@
 
 <component
-	id="DataDropDown"
+	id="DropDown"
 	title="Data Drop Down"
 	icon="res/dd/DDropDown.png"
 	handlerType="sapui5"
-	group="ScnCommunityRsBound"
+	group="ScnCommunityDataBound"
 	databound="true"
 >
 

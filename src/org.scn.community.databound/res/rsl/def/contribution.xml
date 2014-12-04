@@ -1,10 +1,10 @@
 
 <component
-	id="DataRangeSlider"
+	id="RangeSlider"
 	title="Data Range Slider"
 	icon="res/rsl/DRangeSlider.png"
 	handlerType="sapui5"
-	group="ScnCommunityRsBound"
+	group="ScnCommunityDataBound"
 	databound="true"
 >
 

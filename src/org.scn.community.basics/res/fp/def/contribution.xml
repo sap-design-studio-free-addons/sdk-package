@@ -3,7 +3,7 @@
 	title="Fallback Picture"
 	icon="res/fp/FallbackPicture.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 	<jsInclude>res/fp/FallbackPicture.js</jsInclude>
 	<cssInclude>res/fp/FallbackPicture.css</cssInclude>

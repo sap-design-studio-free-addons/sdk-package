@@ -4,7 +4,7 @@
 	title="Kpi View"
 	icon="res/kpi/KpiView.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 	databound="true"
 >
 

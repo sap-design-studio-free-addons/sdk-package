@@ -4,7 +4,7 @@
 	title="Notification Bar"
 	icon="res/nb/NotificationBar.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 	<jsInclude>res/nb/NotificationBar.js</jsInclude>
 	<cssInclude>res/nb/NotificationBar.css</cssInclude>

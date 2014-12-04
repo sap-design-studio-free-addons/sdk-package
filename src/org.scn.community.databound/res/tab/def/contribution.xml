@@ -1,11 +1,11 @@
 
 <component
-	id="DataTable"
+	id="Table"
 	title="Data Table"
 	icon="res/tab/DataTable.png"
 	handlerType="div"
 	propertySheetPath="res/tab/aps/DataTable.html"
-	group="ScnCommunityRsBound"
+	group="ScnCommunityDataBound"
 	databound="true"
 >
 

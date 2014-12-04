@@ -1,10 +1,10 @@
 
 <component
-	id="DataSlider"
+	id="Slider"
 	title="Data Slider"
 	icon="res/sl/DSlider.png"
 	handlerType="sapui5"
-	group="ScnCommunityRsBound"
+	group="ScnCommunityDataBound"
 	databound="true"
 >
 

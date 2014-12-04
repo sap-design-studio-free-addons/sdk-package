@@ -1,10 +1,10 @@
 
 <component
-	id="DataTopFlop"
+	id="TopFlop"
 	title="Data Top Flop"
 	icon="res/tf/DTopFlop.png"
 	handlerType="sapui5"
-	group="ScnCommunityRsBound"
+	group="ScnCommunityDataBound"
 	databound="true"
 >
 

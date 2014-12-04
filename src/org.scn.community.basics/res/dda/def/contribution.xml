@@ -4,7 +4,7 @@
 	title="Drag Drop Area"
 	icon="res/dda/DragDropArea.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 
 	<jsInclude>res/dda/jquery.ndd.js</jsInclude>

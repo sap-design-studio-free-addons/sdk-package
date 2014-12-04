@@ -4,7 +4,7 @@
 	title="Menu Button (>= 1.4)"
 	icon="res/mbt/MenuButton.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 
 	<jsInclude>res/common.js</jsInclude>

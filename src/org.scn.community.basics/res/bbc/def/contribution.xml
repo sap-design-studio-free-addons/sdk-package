@@ -4,7 +4,7 @@
 	title="Basic Business Card"
 	icon="res/bbc/BasicBusinessCard.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 
 	<jsInclude>res/bbc/BasicBusinessCard.js</jsInclude>

@@ -4,7 +4,7 @@
 	title="Fish Eye"
 	icon="res/fe/FishEye.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 
 	<jsInclude>res/fe/FishEye.js</jsInclude>

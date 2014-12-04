@@ -4,7 +4,7 @@
 	title="Open Street Map"
 	icon="res/map/OSMap.png"
 	handlerType="div"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 
 	<jsInclude>res/map/OS-modestmaps-MapLib-min.js</jsInclude>

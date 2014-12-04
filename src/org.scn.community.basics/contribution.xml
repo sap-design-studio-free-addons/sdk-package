@@ -196,7 +196,7 @@
 	title="Accordion"
 	icon="res/ac/Accordion.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 	<jsInclude>res/ac/Accordion.js</jsInclude>
 	<cssInclude>res/ac/Accordion.css</cssInclude>
@@ -347,7 +347,7 @@
 	title="Basic Business Card"
 	icon="res/bbc/BasicBusinessCard.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 
 	<jsInclude>res/bbc/BasicBusinessCard.js</jsInclude>
@@ -405,7 +405,7 @@
 	title="Check Box Group"
 	icon="res/cbg/CheckBoxGroup.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 	<jsInclude>res/cbg/CheckBoxGroup.js</jsInclude>
 	<cssInclude>res/cbg/CheckBoxGroup.css</cssInclude>
@@ -493,7 +493,7 @@
 	title="Drag Drop Area"
 	icon="res/dda/DragDropArea.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 
 	<jsInclude>res/dda/jquery.ndd.js</jsInclude>
@@ -696,7 +696,7 @@
 	title="Fish Eye"
 	icon="res/fe/FishEye.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 
 	<jsInclude>res/fe/FishEye.js</jsInclude>
@@ -761,7 +761,7 @@
 	title="Fallback Picture"
 	icon="res/fp/FallbackPicture.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 	<jsInclude>res/fp/FallbackPicture.js</jsInclude>
 	<cssInclude>res/fp/FallbackPicture.css</cssInclude>
@@ -798,7 +798,7 @@
 	title="Image Carousel"
 	icon="res/ic/ImageCarousel.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 	<jsInclude>res/ic/ImageCarousel.js</jsInclude>
 	<cssInclude>res/ic/ImageCarousel.css</cssInclude>
@@ -850,7 +850,7 @@
 	title="Kpi View"
 	icon="res/kpi/KpiView.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 	databound="true"
 >
 
@@ -1026,7 +1026,7 @@
 	title="Leader Board"
 	icon="res/lb/LeaderBoard.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 	<jsInclude>res/lb/LeaderBoard.js</jsInclude>
 	<cssInclude>res/lb/LeaderBoard.css</cssInclude>
@@ -1142,7 +1142,7 @@
 	title="Menu Bar (>= 1.4)"
 	icon="res/mb/MenuBar.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 
 	<jsInclude>res/common.js</jsInclude>
@@ -1202,7 +1202,7 @@
 	title="Menu Button (>= 1.4)"
 	icon="res/mbt/MenuButton.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 
 	<jsInclude>res/common.js</jsInclude>
@@ -1295,7 +1295,7 @@
 	title="Notification Bar"
 	icon="res/nb/NotificationBar.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 	<jsInclude>res/nb/NotificationBar.js</jsInclude>
 	<cssInclude>res/nb/NotificationBar.css</cssInclude>
@@ -1387,7 +1387,7 @@
 	title="Open Street Map"
 	icon="res/map/OSMap.png"
 	handlerType="div"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 
 	<jsInclude>res/map/OS-modestmaps-MapLib-min.js</jsInclude>
@@ -1826,7 +1826,7 @@
 	title="Tree"
 	icon="res/tr/Tree.png"
 	handlerType="sapui5"
-	group="ScnCommunityComp"
+	group="ScnCommunityBasics"
 >
 	<jsInclude>res/tr/Tree.js</jsInclude>
 	<cssInclude>res/tr/Tree.css</cssInclude>
