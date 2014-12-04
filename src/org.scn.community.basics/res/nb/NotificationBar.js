@@ -34,7 +34,7 @@ _readScriptPath = function () {
 
 jQuery.sap.require("sap.ui.ux3.NotificationBar");
 
-sap.ui.ux3.NotificationBar.extend("org.scn.community.comp.NotificationBar", {
+sap.ui.ux3.NotificationBar.extend("org.scn.community.basics.NotificationBar", {
 
 	metadata: {
         properties: {

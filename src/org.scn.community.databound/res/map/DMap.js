@@ -32,7 +32,7 @@ _readScriptPath = function () {
 },
 /** end of path recognition */
 
-sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.rsbound.DataMap", {
+sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.databound.Map", {
 
 	setFallbackPicture : function(value) {
 		this._FallbackPicture = value;

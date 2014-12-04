@@ -32,7 +32,7 @@ _readScriptPath = function () {
 },
 /** end of path recognition */
 
-sap.ui.commons.Tree.extend("org.scn.community.comp.Tree", {
+sap.ui.commons.Tree.extend("org.scn.community.basics.Tree", {
 
 	setDefaultImage : function(value) {
 		this._DefaultImage = value;

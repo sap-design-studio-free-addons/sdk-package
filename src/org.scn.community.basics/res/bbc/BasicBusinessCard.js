@@ -34,7 +34,7 @@ _readScriptPath = function () {
 
 jQuery.sap.require("sap.ui.commons.layout.AbsoluteLayout");
 
-sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.comp.BasicBusinessCard", {
+sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.basics.BasicBusinessCard", {
 
 	metadata: {
         properties: {

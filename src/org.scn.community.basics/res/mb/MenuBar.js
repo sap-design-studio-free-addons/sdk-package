@@ -32,7 +32,7 @@ _readScriptPath = function () {
 },
 /** end of path recognition */
 
-sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.comp.MenuBar", {
+sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.basics.MenuBar", {
 
 	setDefaultImage : function(value) {
 		this._DefaultImage = value;
@@ -137,7 +137,7 @@ sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.comp.MenuBar", {
 		
 		// resize function
 		this.onAfterRendering = function() {
-			org_scn_community_shared.resizeContentAbsoluteLayout(that, this._oMenuBar);
+			org_scn_community_basics.resizeContentAbsoluteLayout(that, this._oMenuBar);
 		};
 	},
 	

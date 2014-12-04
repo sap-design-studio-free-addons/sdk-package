@@ -2,7 +2,7 @@
 /**
  * Class for Tree
  */
-class org.scn.community.comp.Tree extends Component {
+class org.scn.community.basics.Tree extends Component {
 	
 	/** remove all nodes */
 	void removeAllNodes () {*		

@@ -17,7 +17,7 @@
  * limitations under the License. 
  */
 
-sap.ui.commons.Slider.extend("org.scn.community.rsbound.DataSlider", {
+sap.ui.commons.Slider.extend("org.scn.community.databound.Slider", {
 	
 	setData : function(value) {
 		this._data = value;
@@ -91,7 +91,7 @@ sap.ui.commons.Slider.extend("org.scn.community.rsbound.DataSlider", {
 		var lMetadata = this._metadata;
 		
 		if(this.getDoRefresh()){
-			var lElementsToRenderArray = org_scn_community_rsbound.getTopBottomElements 
+			var lElementsToRenderArray = org_scn_community_databound.getTopBottomElements 
 			    (lData, lMetadata, this.getMaxNumber(), this.getTopBottom(), this.getSorting(), "Ignore Duplicates");
 			
 			this._lLabels = []; 

@@ -202,7 +202,7 @@
 
 	<stdInclude kind="cvom" />
 
-	<jsInclude>res/rscommon.js</jsInclude>
+	<jsInclude>res/common.js</jsInclude>
 	<jsInclude>res/dd/DDropDown.js</jsInclude>
 	<cssInclude>res/dd/DDropDown.css</cssInclude>
 
@@ -443,7 +443,7 @@
 
 	<stdInclude kind="cvom" />
 
-	<jsInclude>res/rscommon.js</jsInclude>
+	<jsInclude>res/common.js</jsInclude>
 	<jsInclude>res/rsl/DRangeSlider.js</jsInclude>
 	<cssInclude>res/rsl/DRangeSlider.css</cssInclude>
 
@@ -569,7 +569,7 @@
 
 	<stdInclude kind="cvom" />
 
-	<jsInclude>res/rscommon.js</jsInclude>
+	<jsInclude>res/common.js</jsInclude>
 	<jsInclude>res/sl/DSlider.js</jsInclude>
 	<cssInclude>res/sl/DSlider.css</cssInclude>
 
@@ -733,6 +733,7 @@
 
 	<stdInclude kind="cvom" />
 
+	<jsInclude>res/common.js</jsInclude>
 	<jsInclude>res/tf/DTopFlop.js</jsInclude>
 	<cssInclude>res/tf/DTopFlop.css</cssInclude>
 

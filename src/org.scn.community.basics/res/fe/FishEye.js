@@ -43,7 +43,7 @@ _readScriptPath = function () {
 
 jQuery.sap.require("sap.ui.commons.layout.AbsoluteLayout");
 
-sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.comp.FishEye", {
+sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.basics.FishEye", {
 
 	setDefaultImage : function(value) {
 		this._DefaultImage = value;

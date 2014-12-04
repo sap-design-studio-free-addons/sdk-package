@@ -10,7 +10,7 @@
 
 	<stdInclude kind="cvom" />
 
-	<jsInclude>res/rscommon.js</jsInclude>
+	<jsInclude>res/common.js</jsInclude>
 	<jsInclude>res/dd/DDropDown.js</jsInclude>
 	<cssInclude>res/dd/DDropDown.css</cssInclude>
 

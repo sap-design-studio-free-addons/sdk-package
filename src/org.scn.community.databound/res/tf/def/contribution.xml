@@ -10,6 +10,7 @@
 
 	<stdInclude kind="cvom" />
 
+	<jsInclude>res/common.js</jsInclude>
 	<jsInclude>res/tf/DTopFlop.js</jsInclude>
 	<cssInclude>res/tf/DTopFlop.css</cssInclude>
 

@@ -32,7 +32,7 @@ _readScriptPath = function () {
 },
 /** end of path recognition */
 
-sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.comp.Accordion", {
+sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.basics.Accordion", {
 
 	setDefaultImage : function(value) {
 		this._DefaultImage = value;

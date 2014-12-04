@@ -34,7 +34,7 @@ _readScriptPath = function () {
 
 jQuery.sap.require("sap.ui.commons.Image");
 	
-sap.ui.commons.Image.extend("org.scn.community.comp.FallbackPicture", {
+sap.ui.commons.Image.extend("org.scn.community.basics.FallbackPicture", {
 
 	metadata: {
         properties: {

@@ -20,7 +20,7 @@
 /**
  * Class for DataLeaderBoard
  */
-class org.scn.community.rsbound.DataLeaderBoard extends Component {
+class org.scn.community.databound.LeaderBoard extends Component {
 
 	/** returns the selected key */
 	String getSelectedKey () {*
@@ -41,7 +41,7 @@ class org.scn.community.rsbound.DataLeaderBoard extends Component {
 /**
  * Class for DataTopFlop
  */
-class org.scn.community.rsbound.DataTopFlop extends Component {
+class org.scn.community.databound.TopFlop extends Component {
 
 	/** returns the selected key */
 	String getSelectedKey () {*
@@ -62,7 +62,7 @@ class org.scn.community.rsbound.DataTopFlop extends Component {
 /**
  * Class for DataTopFlopChart
  */
-class org.scn.community.rsbound.DataTopFlopChart extends Component {
+class org.scn.community.databound.TopFlopChart extends Component {
 
 	/** returns the selected key */
 	String getSelectedKey () {*
@@ -83,7 +83,7 @@ class org.scn.community.rsbound.DataTopFlopChart extends Component {
 /**
  * Class for DataSlider
  */
-class org.scn.community.rsbound.DataSlider extends Component {
+class org.scn.community.databound.Slider extends Component {
 
 	/** returns the selected key */
 	String getSelectedKey () {*
@@ -114,7 +114,7 @@ class org.scn.community.rsbound.DataSlider extends Component {
 /**
  * Class for DataRangeSlider
  */
-class org.scn.community.rsbound.DataRangeSlider extends Component {
+class org.scn.community.databound.RangeSlider extends Component {
 
 	/** returns the selected key 
     <example>
@@ -200,7 +200,7 @@ class org.scn.community.rsbound.DataRangeSlider extends Component {
 /**
  * Class for DataDropDown
  */
-class org.scn.community.rsbound.DataDropDown extends Component {
+class org.scn.community.databound.DropDown extends Component {
 
 	/** returns the selected key 
     <example>

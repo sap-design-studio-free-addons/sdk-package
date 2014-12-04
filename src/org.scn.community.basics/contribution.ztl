@@ -22,7 +22,7 @@
 /**
  * Class for Accordion
  */
-class org.scn.community.comp.Accordion extends Component {
+class org.scn.community.basics.Accordion extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -166,7 +166,7 @@ class org.scn.community.basics.ApplicationHeader extends Component {
 /**
  * Class for BasicBusinessCard
  */
-class org.scn.community.comp.BasicBusinessCard extends Component {
+class org.scn.community.basics.BasicBusinessCard extends Component {
 
 	/** returns the image url */
 	String getImage () {*
@@ -202,7 +202,7 @@ class org.scn.community.comp.BasicBusinessCard extends Component {
 /**
  * Class for CheckBox Group
  */
-class org.scn.community.comp.CheckBoxGroup extends Component {
+class org.scn.community.basics.CheckBoxGroup extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -405,7 +405,7 @@ class org.scn.community.basics.ColorPicker extends Component {
 /**
  * Class for DragDropArea
  */
-class org.scn.community.comp.DragDropArea extends Component {
+class org.scn.community.basics.DragDropArea extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -584,7 +584,7 @@ class org.scn.community.basics.FioriButton extends Component {
 /**
  * Class for FishEye
  */
-class org.scn.community.comp.FishEye extends Component {
+class org.scn.community.basics.FishEye extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -728,7 +728,7 @@ class org.scn.community.comp.FishEye extends Component {
 /**
  * Class for NotificationBar
  */
-class org.scn.community.comp.NotificationBar extends Component {
+class org.scn.community.basics.NotificationBar extends Component {
 
 	/** 
 	 * Add Category
@@ -831,7 +831,7 @@ class org.scn.community.comp.NotificationBar extends Component {
 /**
  * Class for FallbackPicture
  */
-class org.scn.community.comp.FallbackPicture extends Component {
+class org.scn.community.basics.FallbackPicture extends Component {
 	
 	/**
 	 * Setter for "normal case" picture
@@ -855,7 +855,7 @@ class org.scn.community.comp.FallbackPicture extends Component {
 /**
  * Class for ImageCarousel
  */
-class org.scn.community.comp.ImageCarousel extends Component {
+class org.scn.community.basics.ImageCarousel extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -981,7 +981,7 @@ class org.scn.community.comp.ImageCarousel extends Component {
 /**
  * Class for BasicBusinessCard
  */
-class org.scn.community.comp.BasicBusinessCard extends Component {
+class org.scn.community.basics.BasicBusinessCard extends Component {
 
 	/** returns the image url */
 	String getImage () {*
@@ -1017,7 +1017,7 @@ class org.scn.community.comp.BasicBusinessCard extends Component {
 /**
  * Class for FishEye
  */
-class org.scn.community.comp.FishEye extends Component {
+class org.scn.community.basics.FishEye extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -1148,7 +1148,7 @@ class org.scn.community.comp.FishEye extends Component {
  * 
  * Authors: Michael Howles, Scn Community Contributors
  */
-class org.scn.community.comp.Collection extends Component {  
+class org.scn.community.basics.Collection extends Component {  
 	
 	/**
 	Returns the collection content as loopable array.
@@ -1450,8 +1450,8 @@ class org.scn.community.comp.Collection extends Component {
 	/**
 	 * Sorts the collection by values with optional parameter for direction (ascending is default)
 	 */
-	void sortByKey(optional org_scn_community_shared_SortDirectionEnumfield direction) {*
-		if(direction == org_scn_community_shared_SortDirection.DESCENDING) {
+	void sortByKey(optional org_scn_community_basics_SortDirectionEnumfield direction) {*
+		if(direction == org_scn_community_basics_SortDirection.DESCENDING) {
 			this.sortByKeyDescending();
 			return;
 		}
@@ -1483,8 +1483,8 @@ class org.scn.community.comp.Collection extends Component {
 	/**
 	 * Sorts the collection by values with optional parameter for direction (ascending is default)
 	 */
-	void sortByLabel(optional org_scn_community_shared_SortDirectionEnumfield direction) {*
-		if(direction == org_scn_community_shared_SortDirection.DESCENDING) {
+	void sortByLabel(optional org_scn_community_basics_SortDirectionEnumfield direction) {*
+		if(direction == org_scn_community_basics_SortDirection.DESCENDING) {
 			this.sortByLabelDescending();
 			return;
 		}
@@ -1516,8 +1516,8 @@ class org.scn.community.comp.Collection extends Component {
 	/**
 	 * Sorts the collection by values with optional parameter for direction (ascending is default)
 	 */
-	void sortByValue(optional org_scn_community_shared_SortDirectionEnumfield direction) {*
-		if(direction == org_scn_community_shared_SortDirection.DESCENDING) {
+	void sortByValue(optional org_scn_community_basics_SortDirectionEnumfield direction) {*
+		if(direction == org_scn_community_basics_SortDirection.DESCENDING) {
 			this.sortByValueDescending();
 			return;
 		}
@@ -1717,7 +1717,7 @@ class org.scn.community.comp.Collection extends Component {
  * 
  * Authors: Michael Howles, Scn Community Contributors
  */
-class org.scn.community.comp.Array extends Component {  
+class org.scn.community.basics.Array extends Component {  
 	
 	/**
 	Returns the array content as loopable array.
@@ -1992,7 +1992,7 @@ class org.scn.community.comp.Array extends Component {
 	*}
 }
 
-class org.scn.community.comp.KpiView extends Component {
+class org.scn.community.basics.KpiView extends Component {
 	
 	/* Sets the header text. */
 	void setHeaderText(/* Header text */ String text) {*
@@ -2153,7 +2153,7 @@ class org.scn.community.comp.KpiView extends Component {
 /**
  * Class for DragDropArea
  */
-class org.scn.community.comp.DragDropArea extends Component {
+class org.scn.community.basics.DragDropArea extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -2304,7 +2304,7 @@ class org.scn.community.comp.DragDropArea extends Component {
 /**
  * Class for LeaderBoard
  */
-class org.scn.community.comp.LeaderBoard extends Component {
+class org.scn.community.basics.LeaderBoard extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -2441,7 +2441,7 @@ class org.scn.community.comp.LeaderBoard extends Component {
 /**
  * Class for CheckBox Group
  */
-class org.scn.community.comp.CheckBoxGroup extends Component {
+class org.scn.community.basics.CheckBoxGroup extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -2627,7 +2627,7 @@ class org.scn.community.comp.CheckBoxGroup extends Component {
 /**
  * Class for Tree
  */
-class org.scn.community.comp.Tree extends Component {
+class org.scn.community.basics.Tree extends Component {
 	
 	/** remove all nodes */
 	void removeAllNodes () {*		
@@ -2715,7 +2715,7 @@ class org.scn.community.comp.Tree extends Component {
 /**
  * Class for Accordion
  */
-class org.scn.community.comp.Accordion extends Component {
+class org.scn.community.basics.Accordion extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -2831,7 +2831,7 @@ class org.scn.community.comp.Accordion extends Component {
 /**
  * Class for MenuBar
  */
-class org.scn.community.comp.MenuBar extends Component {
+class org.scn.community.basics.MenuBar extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -2922,7 +2922,7 @@ class org.scn.community.comp.MenuBar extends Component {
 /**
  * Class for Open Street Map
  */
-class org.scn.community.comp.OSMap extends Component {
+class org.scn.community.basics.OSMap extends Component {
 	
 	/**
 	 * Zooms in the map
@@ -3036,7 +3036,7 @@ class org.scn.community.comp.OSMap extends Component {
 /**
  * Class for MenuButton
  */
-class org.scn.community.comp.MenuButton extends Component {
+class org.scn.community.basics.MenuButton extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -3127,7 +3127,7 @@ class org.scn.community.comp.MenuButton extends Component {
 /**
  * Class for ImageCarousel
  */
-class org.scn.community.comp.ImageCarousel extends Component {
+class org.scn.community.basics.ImageCarousel extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -3250,7 +3250,7 @@ class org.scn.community.comp.ImageCarousel extends Component {
 	*}
 }
 
-class org.scn.community.comp.KpiView extends Component {
+class org.scn.community.basics.KpiView extends Component {
 	
 	/* Sets the header text. */
 	void setHeaderText(/* Header text */ String text) {*
@@ -3411,7 +3411,7 @@ class org.scn.community.comp.KpiView extends Component {
 /**
  * Class for LeaderBoard
  */
-class org.scn.community.comp.LeaderBoard extends Component {
+class org.scn.community.basics.LeaderBoard extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -3565,7 +3565,7 @@ class org.scn.community.basics.Link extends Component {
 /**
  * Class for MenuBar
  */
-class org.scn.community.comp.MenuBar extends Component {
+class org.scn.community.basics.MenuBar extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -3656,7 +3656,7 @@ class org.scn.community.comp.MenuBar extends Component {
 /**
  * Class for MenuButton
  */
-class org.scn.community.comp.MenuButton extends Component {
+class org.scn.community.basics.MenuButton extends Component {
 	
 	/** remove all elements */
 	void removeAllElements () {*		
@@ -3747,7 +3747,7 @@ class org.scn.community.comp.MenuButton extends Component {
 /**
  * Class for NotificationBar
  */
-class org.scn.community.comp.NotificationBar extends Component {
+class org.scn.community.basics.NotificationBar extends Component {
 
 	/** 
 	 * Add Category
@@ -3850,7 +3850,7 @@ class org.scn.community.comp.NotificationBar extends Component {
 /**
  * Class for FallbackPicture
  */
-class org.scn.community.comp.FallbackPicture extends Component {
+class org.scn.community.basics.FallbackPicture extends Component {
 	
 	/**
 	 * Setter for "normal case" picture
@@ -3874,7 +3874,7 @@ class org.scn.community.comp.FallbackPicture extends Component {
 /**
  * Class for Open Street Map
  */
-class org.scn.community.comp.OSMap extends Component {
+class org.scn.community.basics.OSMap extends Component {
 	
 	/**
 	 * Zooms in the map
@@ -4338,7 +4338,7 @@ class org.scn.community.basics.ToggleButton extends Component {
 /**
  * Class for Tree
  */
-class org.scn.community.comp.Tree extends Component {
+class org.scn.community.basics.Tree extends Component {
 	
 	/** remove all nodes */
 	void removeAllNodes () {*		

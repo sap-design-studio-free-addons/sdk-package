@@ -2,7 +2,7 @@
 /**
  * Class for DataSlider
  */
-class org.scn.community.rsbound.DataSlider extends Component {
+class org.scn.community.databound.Slider extends Component {
 
 	/** returns the selected key */
 	String getSelectedKey () {*

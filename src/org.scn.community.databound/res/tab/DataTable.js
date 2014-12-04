@@ -1,4 +1,4 @@
-sap.designstudio.sdk.Component.subclass("org.scn.community.rsbound.DataTable", function() {
+sap.designstudio.sdk.Component.subclass("org.scn.community.databound.Table", function() {
 
 	var CSS_CLASS_DIV = "sapzencrosstab-TableDiv";
 	var CSS_CLASS_TABLE = "sapzencrosstab-Crosstab";

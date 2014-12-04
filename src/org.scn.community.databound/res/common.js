@@ -17,10 +17,14 @@
  * limitations under the License. 
  */
 
-var org_scn_community_rsbound = org_scn_community_rsbound || {};
+var org_scn_community_databound = org_scn_community_databound || {};
 
-org_scn_community_rsbound.getTopBottomElementsForDimension = function (data, requestedDimensionKey, metadata, iMaxNumber, iTopBottom, iSortBy, iDuplicates) {
+org_scn_community_databound.getTopBottomElementsForDimension = function (data, requestedDimensionKey, metadata, iMaxNumber, iTopBottom, iSortBy, iDuplicates) {
 
+	if(!metadata || !metadata.dimensions) {
+		return [];
+	}
+	
 	var dimesnsionStartIndex = -1;
 	var dimesnsionEndIndex = -1;
 
@@ -50,7 +54,7 @@ org_scn_community_rsbound.getTopBottomElementsForDimension = function (data, req
 		return [];
 	}
 	
-	return org_scn_community_rsbound.getTopBottomElementsByIndex (data, dimesnsionStartIndex, dimesnsionEndIndex, metadata, iMaxNumber, iTopBottom, iSortBy, iDuplicates);
+	return org_scn_community_databound.getTopBottomElementsByIndex (data, dimesnsionStartIndex, dimesnsionEndIndex, metadata, iMaxNumber, iTopBottom, iSortBy, iDuplicates);
 };
 
 /**
@@ -60,15 +64,15 @@ org_scn_community_rsbound.getTopBottomElementsForDimension = function (data, req
  * iSortBy - string, "Default" | <some other string>
  * iDuplicates - string, "Ignore Duplicates" | <some other string>
  */
-org_scn_community_rsbound.getTopBottomElements = function (data, metadata, iMaxNumber, iTopBottom, iSortBy, iDuplicates) {
+org_scn_community_databound.getTopBottomElements = function (data, metadata, iMaxNumber, iTopBottom, iSortBy, iDuplicates) {
 
 	var dimesnsionStartIndex = -1;
 	var dimesnsionEndIndex = -1;
 
-	return org_scn_community_rsbound.getTopBottomElementsByIndex (data, dimesnsionStartIndex, dimesnsionEndIndex, metadata, iMaxNumber, iTopBottom, iSortBy, iDuplicates);
+	return org_scn_community_databound.getTopBottomElementsByIndex (data, dimesnsionStartIndex, dimesnsionEndIndex, metadata, iMaxNumber, iTopBottom, iSortBy, iDuplicates);
 };
 
-org_scn_community_rsbound.getTopBottomElementsByIndex = function (data, dimesnsionStartIndex, dimesnsionEndIndex, metadata, iMaxNumber, iTopBottom, iSortBy, iDuplicates) {
+org_scn_community_databound.getTopBottomElementsByIndex = function (data, dimesnsionStartIndex, dimesnsionEndIndex, metadata, iMaxNumber, iTopBottom, iSortBy, iDuplicates) {
 	var list = [];
 	
 	if(!data || data == "" || data == undefined) {
@@ -144,7 +148,7 @@ org_scn_community_rsbound.getTopBottomElementsByIndex = function (data, dimesnsi
 				text: text, 
 				url: key,
 				value: value,
-				valueS: org_scn_community_rsbound.getFormattedValue(value),
+				valueS: org_scn_community_databound.getFormattedValue(value),
 			};
 
 			list.push(itemDef);
@@ -293,7 +297,7 @@ org_scn_community_rsbound.getTopBottomElementsByIndex = function (data, dimesnsi
 /**
  * Formats the double value according to locale (using cvom lib)
  */
-org_scn_community_rsbound.getFormattedValue = function (value) {
+org_scn_community_databound.getFormattedValue = function (value) {
 	if(!this._metadata) {
 		return value;
 	}

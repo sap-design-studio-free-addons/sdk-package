@@ -2,7 +2,7 @@
 /**
  * Class for DataTopFlopChart
  */
-class org.scn.community.rsbound.DataTopFlopChart extends Component {
+class org.scn.community.databound.TopFlopChart extends Component {
 
 	/** returns the selected key */
 	String getSelectedKey () {*

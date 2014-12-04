@@ -34,7 +34,7 @@ _readScriptPath = function () {
 
 jQuery.sap.require("sap.ui.commons.layout.AbsoluteLayout");
 
-sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.comp.KpiView", {
+sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.basics.KpiView", {
 
 	metadata: {
         properties: {

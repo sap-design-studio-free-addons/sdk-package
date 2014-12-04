@@ -21,9 +21,9 @@
  * Global Functions for work with components
  */
 
-var org_scn_community_shared = org_scn_community_shared || {};
+var org_scn_community_basics = org_scn_community_basics || {};
 
-org_scn_community_shared.resizeContentAbsoluteLayout = function (parent, mainObject) {
+org_scn_community_basics.resizeContentAbsoluteLayout = function (parent, mainObject) {
 	if(parent._oContentPlaced != true) {
 		var jqThis = parent.$();
 		

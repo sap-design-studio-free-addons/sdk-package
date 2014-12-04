@@ -32,7 +32,7 @@ _readScriptPath = function () {
 },
 /** end of path recognition */
 
-sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.rsbound.DataTopFlopChart", {
+sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.databound.TopFlopChart", {
 
 	setFallbackPicture : function(value) {
 		this._FallbackPicture = value;
@@ -197,7 +197,7 @@ sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.rsbound.DataTopFl
 				// insert Average Information
 				var oTextValue = new sap.ui.commons.TextView();
 				oTextValue.addStyleClass("scn-pack-DataTopFlopChart-AverageText");
-				oTextValue.setText(this.getAveragePrefix() + this._fFormatNumber(this._Average) + this.getAverageSuffix());
+				oTextValue.setText(this.getAveragePrefix() + org_scn_community_databound.getFormattedValue(this._metadata, this._Average) + this.getAverageSuffix());
 				this._lLayout.addContent(
 						oTextValue
 				);
@@ -686,25 +686,6 @@ sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.rsbound.DataTopFl
 				lLayout.removeStyleClass("scn-pack-DataTopFlopChart-SelectedValue");
 			};
 		};
-	},
-	
-	_fFormatNumber : function (value) {
-		if(!this._metadata) {
-			return value;
-		}
-		
-		sap.common.globalization.NumericFormatManager.setPVL(this._metadata.locale);
-		var strFormat = "#"+sap.common.globalization.NumericFormatManager.getThousandSeparator()+"##0";
-		
-		if (this.getValueDecimalPlaces() > 0) {
-			strFormat += sap.common.globalization.NumericFormatManager.getDecimalSeparator();
-			for (var i = 0; i < this.getValueDecimalPlaces(); i++) {
-				strFormat += "0";
-			}
-		}
-		
-		var valueFormatted = sap.common.globalization.NumericFormatManager.format(value, strFormat);
-		return valueFormatted;
 	},
 	
 	// http://www.sitepoint.com/javascript-generate-lighter-darker-color/

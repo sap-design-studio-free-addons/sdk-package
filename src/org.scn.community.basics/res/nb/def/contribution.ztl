@@ -2,7 +2,7 @@
 /**
  * Class for NotificationBar
  */
-class org.scn.community.comp.NotificationBar extends Component {
+class org.scn.community.basics.NotificationBar extends Component {
 
 	/** 
 	 * Add Category
@@ -105,7 +105,7 @@ class org.scn.community.comp.NotificationBar extends Component {
 /**
  * Class for FallbackPicture
  */
-class org.scn.community.comp.FallbackPicture extends Component {
+class org.scn.community.basics.FallbackPicture extends Component {
 	
 	/**
 	 * Setter for "normal case" picture

@@ -32,7 +32,7 @@ _readScriptPath = function () {
 },
 /** end of path recognition */
 
-sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.comp.CheckBoxGroup", {
+sap.ui.commons.layout.AbsoluteLayout.extend("org.scn.community.basics.CheckBoxGroup", {
 
 	setFallbackPicture : function(value) {
 		this._FallbackPicture = value;

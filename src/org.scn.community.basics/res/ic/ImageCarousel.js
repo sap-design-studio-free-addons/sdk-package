@@ -34,7 +34,7 @@ _readScriptPath = function () {
 
 jQuery.sap.require("sap.ui.commons.Carousel");
 
-sap.ui.commons.Carousel.extend("org.scn.community.comp.ImageCarousel", {
+sap.ui.commons.Carousel.extend("org.scn.community.basics.ImageCarousel", {
 
 	setDefaultImage : function(value) {
 		this._DefaultImage = value;

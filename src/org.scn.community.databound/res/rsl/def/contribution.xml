@@ -10,7 +10,7 @@
 
 	<stdInclude kind="cvom" />
 
-	<jsInclude>res/rscommon.js</jsInclude>
+	<jsInclude>res/common.js</jsInclude>
 	<jsInclude>res/rsl/DRangeSlider.js</jsInclude>
 	<cssInclude>res/rsl/DRangeSlider.css</cssInclude>
 

@@ -1,5 +1,5 @@
 
-class org.scn.community.comp.KpiView extends Component {
+class org.scn.community.basics.KpiView extends Component {
 	
 	/* Sets the header text. */
 	void setHeaderText(/* Header text */ String text) {*

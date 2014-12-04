@@ -17,7 +17,7 @@
  * limitations under the License. 
  */
 
-sap.ui.commons.DropdownBox.extend("org.scn.community.rsbound.DataDropDown", {
+sap.ui.commons.DropdownBox.extend("org.scn.community.databound.DropDown", {
 
 	setData : function(value) {
 		this._data = value;
@@ -107,7 +107,7 @@ sap.ui.commons.DropdownBox.extend("org.scn.community.rsbound.DataDropDown", {
 		var lMetadata = this._metadata;
 		
 		if(this.getDoRefresh()){
-			var lElementsToRenderArray = org_scn_community_rsbound.getTopBottomElementsForDimension 
+			var lElementsToRenderArray = org_scn_community_databound.getTopBottomElementsForDimension 
 			     (lData, this.getDimension(), lMetadata, this.getMaxNumber(), this.getTopBottom(), this.getSorting(), "Ignore Duplicates");
 			
 			this._content = []; 
