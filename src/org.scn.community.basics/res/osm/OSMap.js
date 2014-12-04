@@ -32,7 +32,7 @@ _readScriptPath = function () {
 },
 /** end of path recognition */
 
-sap.designstudio.sdk.Component.subclass("org.scn.community.basics.OSMap", function() {
+sap.designstudio.sdk.Component.subclass("org.scn.community.basics.Map", function() {
 	
 	var pImagePrefix = undefined;
 	

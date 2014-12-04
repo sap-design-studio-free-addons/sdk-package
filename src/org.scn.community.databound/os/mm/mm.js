@@ -835,6 +835,11 @@ var MM = com.modestmaps = {
             }
         };
 
+        // can happen for some reason
+        if(getTileUrl == "null") {
+        	return;
+        }
+        
         MM.MapProvider.call(this, getTileUrl);
     };
 
@@ -1572,7 +1577,9 @@ var MM = com.modestmaps = {
                     this.loadingBay.removeChild(img);
                     this.openRequestCount--;
                     /* console.log(this.openRequestCount + " open requests"); */
-                    img.src = img.coord = img.onload = img.onerror = null;
+                    /** mod KK, causes null requst */
+                    // img.src = 
+                    img.coord = img.onload = img.onerror = null;
                 }
             }
 

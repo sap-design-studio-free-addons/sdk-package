@@ -1,17 +1,17 @@
 
 <component
-	id="OSMap"
+	id="Map"
 	title="Open Street Map"
 	icon="res/map/OSMap.png"
 	handlerType="div"
 	group="ScnCommunityBasics"
 >
 
-	<jsInclude>res/map/OS-modestmaps-MapLib-min.js</jsInclude>
-	<jsInclude>res/map/OS-modestmaps-FollowerLib.js</jsInclude>
+	<jsInclude>os/mm/mm-min.js</jsInclude>
+	<jsInclude>os/mm/mm-follower.js</jsInclude>
 
-	<jsInclude>res/map/OSMap.js</jsInclude>
-	<cssInclude>res/map/OSMap.css</cssInclude>
+	<jsInclude>res/osm/OSMap.js</jsInclude>
+	<cssInclude>res/osm/OSMap.css</cssInclude>
 
 	<property
 		id="moveTo"
