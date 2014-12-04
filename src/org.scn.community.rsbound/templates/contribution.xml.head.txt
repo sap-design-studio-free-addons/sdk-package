@@ -1,2 +1,0 @@
-	id="org.scn.community.rsbound"
-	title="Design Studio SCN Community ResultSet Bound"

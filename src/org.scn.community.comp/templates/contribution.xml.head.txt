@@ -1,2 +1,0 @@
-	id="org.scn.community.comp"
-	title="Design Studio SCN Community Components"

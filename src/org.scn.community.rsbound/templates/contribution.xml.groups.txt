@@ -1,4 +1,0 @@
-
-	<group
-		id="ScnCommunityRsBound"
-		title="Scn Community ResultSet Bound"/>

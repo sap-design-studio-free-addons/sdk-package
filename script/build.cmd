@@ -15,12 +15,12 @@ cd ..\src\%module%\script\
 call build.cmd
 cd %current%
 
-set module=org.scn.community.comp
+set module=org.scn.community.databound
 cd ..\src\%module%\script\
 call build.cmd
 cd %current%
 
-set module=org.scn.community.rsbound
+set module=org.scn.community.datasource
 cd ..\src\%module%\script\
 call build.cmd
 cd %current%

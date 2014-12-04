@@ -192,6 +192,108 @@
 		title="Scn Community Basics"/>
 
 <component
+	id="Accordion"
+	title="Accordion"
+	icon="res/ac/Accordion.png"
+	handlerType="sapui5"
+	group="ScnCommunityComp"
+>
+	<jsInclude>res/ac/Accordion.js</jsInclude>
+	<cssInclude>res/ac/Accordion.css</cssInclude>
+
+	<property
+		id="selectedKey"
+		type="String"
+		title="Technical proprty for Selected Key"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="expandedKey"
+		type="String"
+		title="Technical proprty for Expanded Key"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="cleanAll"
+		type="boolean"
+		title="Technical proprty for Clean All Nodes"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="elementsContent"
+		type="String"
+		title="Technical property for list of nodes"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="defaultImage"
+		title="Url for Default Image"
+		tooltip="Url for Default Image which should be shown"
+		type="Url"
+		visible="true" />
+
+	<property
+		id="withImage"
+		title="Use Images"
+		type="boolean"
+		group="Display"
+	>
+	</property>
+
+	<property
+		id="maxSectionHeight"
+		title="Max Height for Section"
+		type="int"
+		group="Display"
+	>
+	</property>
+
+	<property
+		id="imageSize"
+		title="Size of the Image"
+		type="String"
+		group="Display"
+	>
+		<possibleValue>16px</possibleValue>
+		<possibleValue>32px</possibleValue>
+	</property>
+
+	<property
+		id="onSelectionChanged"
+		type="ScriptText"
+		title="Event for On Selection Changed"
+		group="Events" />
+
+	<property
+		id="onFirstExpand"
+		type="ScriptText"
+		title="Event for On First Expand"
+		group="Events" />
+
+	<initialization>
+		<defaultValue property="WIDTH">230</defaultValue>
+		<defaultValue property="HEIGHT">400</defaultValue>
+		<defaultValue property="TOP_MARGIN">0</defaultValue>
+		<defaultValue property="LEFT_MARGIN">0</defaultValue>
+		<defaultValue property="RIGHT_MARGIN">auto</defaultValue>
+		<defaultValue property="BOTTOM_MARGIN">auto</defaultValue>
+		<defaultValue property="fallbackPicture">true</defaultValue>
+		<defaultValue property="selectedKey"></defaultValue>
+		<defaultValue property="expandedKey"></defaultValue>
+		<defaultValue property="elementsContent"></defaultValue>
+		<defaultValue property="withImage">false</defaultValue>
+		<defaultValue property="imageSize">16px</defaultValue>
+		<defaultValue property="maxSectionHeight">200</defaultValue>
+
+	</initialization>
+
+</component>
+
+<component
 	id="ApplicationHeader"
 	title="Application Header"
 	handlerType="sapui5"
@@ -241,6 +343,128 @@
 	</initialization>
 </component>
 <component
+	id="BasicBusinessCard"
+	title="Basic Business Card"
+	icon="res/bbc/BasicBusinessCard.png"
+	handlerType="sapui5"
+	group="ScnCommunityComp"
+>
+
+	<jsInclude>res/bbc/BasicBusinessCard.js</jsInclude>
+	<cssInclude>res/bbc/BasicBusinessCard.css</cssInclude>
+
+	<property
+		id="image"
+		type="Url"
+		title="Image Url"
+		tooltip="Url for Image"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="name"
+		type="String"
+		title="Name"
+		tooltip="Name"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="title"
+		type="String"
+		title="Title"
+		tooltip="Title below the name"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="onPress"
+		type="ScriptText"
+		title="On Press"
+		tooltip="Event for On Press"
+		group="Events" />
+
+	<initialization>
+		<defaultValue property="WIDTH">300</defaultValue>
+		<defaultValue property="HEIGHT">100</defaultValue>
+		<defaultValue property="TOP_MARGIN">0</defaultValue>
+		<defaultValue property="LEFT_MARGIN">0</defaultValue>
+		<defaultValue property="RIGHT_MARGIN">auto</defaultValue>
+		<defaultValue property="BOTTOM_MARGIN">auto</defaultValue>
+		<defaultValue property="image"></defaultValue>
+		<defaultValue property="name">Last, First</defaultValue>
+		<defaultValue property="title">Expert for All Issues
+		</defaultValue>
+
+	</initialization>
+
+</component>
+
+<component
+	id="CheckBoxGroup"
+	title="Check Box Group"
+	icon="res/cbg/CheckBoxGroup.png"
+	handlerType="sapui5"
+	group="ScnCommunityComp"
+>
+	<jsInclude>res/cbg/CheckBoxGroup.js</jsInclude>
+	<cssInclude>res/cbg/CheckBoxGroup.css</cssInclude>
+
+	<property
+		id="fallbackPicture"
+		type="Url"
+		title="Fallback Picture Url"
+		tooltip="Url for Fallback Picture (must be set)"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="withPicture"
+		title="Use Pictures"
+		type="boolean"
+		group="Display"
+	>
+	</property>
+
+	<property
+		id="pictureSize"
+		title="Size of the Picture"
+		type="String"
+		group="Display"
+	>
+		<possibleValue>16px</possibleValue>
+		<possibleValue>32px</possibleValue>
+	</property>
+
+	<property
+		id="elements"
+		type="String"
+		title="Technical property for list of elements"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="onSelectionChanged"
+		type="ScriptText"
+		title="Event for On Selection Changed"
+		group="Events" />
+
+	<initialization>
+		<defaultValue property="WIDTH">230</defaultValue>
+		<defaultValue property="HEIGHT">400</defaultValue>
+		<defaultValue property="TOP_MARGIN">0</defaultValue>
+		<defaultValue property="LEFT_MARGIN">0</defaultValue>
+		<defaultValue property="RIGHT_MARGIN">auto</defaultValue>
+		<defaultValue property="BOTTOM_MARGIN">auto</defaultValue>
+		<defaultValue property="fallbackPicture"></defaultValue>
+		<defaultValue property="withPicture">true</defaultValue>
+		<defaultValue property="pictureSize">16px</defaultValue>
+		<defaultValue property="elements"></defaultValue>
+
+	</initialization>
+
+</component>
+<component
 	id="ColorPicker"
 	title="Color Picker"
 	handlerType="sapui5"
@@ -263,6 +487,123 @@
 		<defaultValue property="HEIGHT">134</defaultValue>
 		<defaultValue property="colorString">red</defaultValue>
 	</initialization>
+</component>
+<component
+	id="DragDropArea"
+	title="Drag Drop Area"
+	icon="res/dda/DragDropArea.png"
+	handlerType="sapui5"
+	group="ScnCommunityComp"
+>
+
+	<jsInclude>res/dda/jquery.ndd.js</jsInclude>
+	<jsInclude>res/dda/DragDropArea.js</jsInclude>
+	<cssInclude>res/dda/DragDropArea.css</cssInclude>
+
+	<property
+		id="defaultImage"
+		type="Url"
+		title="Default Image Url"
+		tooltip="Url for Default Image (must be set)"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="orientation"
+		type="String"
+		title="Orientation"
+		group="Display"
+		visible="true"
+	>
+		<possibleValue>horizontal</possibleValue>
+		<possibleValue>vertical</possibleValue>
+	</property>
+
+	<property
+		id="itemWidth"
+		type="int"
+		title="Width of the Item"
+		group="Display"
+		visible="true"
+	>
+	</property>
+
+	<property
+		id="elements"
+		type="String"
+		title="Technical proprty for list of elements"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="dragKey"
+		type="String"
+		title="Drag Drop Key"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="dragContext"
+		type="String"
+		title="Drag Drop Context"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="dropId"
+		type="String"
+		title="Drop Id"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="dropKey"
+		type="String"
+		title="Drop Key"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="dropContext"
+		type="String"
+		title="Drop Context"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="dropAfterKey"
+		type="String"
+		title="Technical proprty for Drop After Key"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="dropIndex"
+		type="int"
+		title="Technical proprty for Drop Index"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="onDrop"
+		type="ScriptText"
+		title="Event for On Drop Event"
+		group="Events" />
+
+	<initialization>
+		<defaultValue property="WIDTH">300</defaultValue>
+		<defaultValue property="HEIGHT">100</defaultValue>
+		<defaultValue property="TOP_MARGIN">0</defaultValue>
+		<defaultValue property="LEFT_MARGIN">0</defaultValue>
+		<defaultValue property="RIGHT_MARGIN">auto</defaultValue>
+		<defaultValue property="BOTTOM_MARGIN">auto</defaultValue>
+		<defaultValue property="defaultImage"></defaultValue>
+		<defaultValue property="elements"></defaultValue>
+		<defaultValue property="orientation">horizontal</defaultValue>
+		<defaultValue property="itemWidth">120</defaultValue>
+
+	</initialization>
+
 </component>
 <component
 	id="FioriButton"
@@ -351,6 +692,423 @@
 	</initialization>
 </component>
 <component
+	id="FishEye"
+	title="Fish Eye"
+	icon="res/fe/FishEye.png"
+	handlerType="sapui5"
+	group="ScnCommunityComp"
+>
+
+	<jsInclude>res/fe/FishEye.js</jsInclude>
+	<cssInclude>res/fe/FishEye.css</cssInclude>
+
+	<property
+		id="defaultImage"
+		type="Url"
+		title="Default Image Url"
+		tooltip="Url for Default Image (must be set)"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="selectedKey"
+		type="String"
+		title="Technical proprty for Selected Key"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="orientation"
+		type="String"
+		title="Technical proprty for Selected Key"
+		group="Display"
+		visible="true"
+	>
+		<possibleValue>horizontal-top</possibleValue>
+		<possibleValue>horizontal-bottom</possibleValue>
+	</property>
+
+	<property
+		id="elements"
+		type="String"
+		title="Technical proprty for list of elements"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="onSelectionChanged"
+		type="ScriptText"
+		title="Event for On Selection Changed"
+		group="Events" />
+
+	<initialization>
+		<defaultValue property="WIDTH">300</defaultValue>
+		<defaultValue property="HEIGHT">100</defaultValue>
+		<defaultValue property="TOP_MARGIN">0</defaultValue>
+		<defaultValue property="LEFT_MARGIN">0</defaultValue>
+		<defaultValue property="RIGHT_MARGIN">auto</defaultValue>
+		<defaultValue property="BOTTOM_MARGIN">auto</defaultValue>
+
+		<defaultValue property="defaultImage"></defaultValue>
+		<defaultValue property="selectedKey"></defaultValue>
+		<defaultValue property="orientation">horizontal-bottom</defaultValue>
+		<defaultValue property="elements"></defaultValue>
+
+	</initialization>
+
+</component><component
+	id="FallbackPicture"
+	title="Fallback Picture"
+	icon="res/fp/FallbackPicture.png"
+	handlerType="sapui5"
+	group="ScnCommunityComp"
+>
+	<jsInclude>res/fp/FallbackPicture.js</jsInclude>
+	<cssInclude>res/fp/FallbackPicture.css</cssInclude>
+
+	<property
+		id="picture"
+		title="Url for Picture"
+		tooltip="Url for Picture which should be shown"
+		type="Url"
+		visible="true" />
+
+	<property
+		id="fallbackPicture"
+		title="Url for Fallback Picture"
+		tooltip="Url for Fallback Picture which should be shown"
+		type="Url"
+		visible="true" />
+
+	<initialization>
+		<defaultValue property="WIDTH">100</defaultValue>
+		<defaultValue property="HEIGHT">100</defaultValue>
+		<defaultValue property="TOP_MARGIN">0</defaultValue>
+		<defaultValue property="LEFT_MARGIN">0</defaultValue>
+		<defaultValue property="RIGHT_MARGIN">auto</defaultValue>
+		<defaultValue property="BOTTOM_MARGIN">auto</defaultValue>
+		<defaultValue property="picture"></defaultValue>
+		<defaultValue property="fallbackPicture"></defaultValue>
+
+	</initialization>
+
+</component>
+<component
+	id="ImageCarousel"
+	title="Image Carousel"
+	icon="res/ic/ImageCarousel.png"
+	handlerType="sapui5"
+	group="ScnCommunityComp"
+>
+	<jsInclude>res/ic/ImageCarousel.js</jsInclude>
+	<cssInclude>res/ic/ImageCarousel.css</cssInclude>
+
+	<property
+		id="defaultImage"
+		type="Url"
+		title="Default Image Url"
+		tooltip="Url for Default Image (must be set)"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="selectedKey"
+		type="String"
+		title="Technical proprty for Selected Key"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="elements"
+		type="String"
+		title="Technical property for list of elements"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="onSelectionChanged"
+		type="ScriptText"
+		title="Event for On Selection Changed"
+		group="Events" />
+
+	<initialization>
+		<defaultValue property="WIDTH">300</defaultValue>
+		<defaultValue property="HEIGHT">100</defaultValue>
+		<defaultValue property="TOP_MARGIN">0</defaultValue>
+		<defaultValue property="LEFT_MARGIN">0</defaultValue>
+		<defaultValue property="RIGHT_MARGIN">auto</defaultValue>
+		<defaultValue property="BOTTOM_MARGIN">auto</defaultValue>
+		<defaultValue property="defaultImage"></defaultValue>
+		<defaultValue property="selectedKey"></defaultValue>
+		<defaultValue property="elements"></defaultValue>
+
+	</initialization>
+
+</component>
+<component
+	id="KpiView"
+	title="Kpi View"
+	icon="res/kpi/KpiView.png"
+	handlerType="sapui5"
+	group="ScnCommunityComp"
+	databound="true"
+>
+
+	<stdInclude kind="cvom" />
+
+	<jsInclude>res/kpi/KpiView.js</jsInclude>
+	<cssInclude>res/kpi/KpiView.css</cssInclude>
+
+	<property
+		id="data"
+		title="Data Value"
+		type="ResultCell"
+		group="DataBinding"
+	>
+	</property>
+	<property
+		id="headerText"
+		title="Header"
+		type="String"
+		group="Display" />
+	<property
+		id="headerCssClass"
+		title="Header CSS Class"
+		type="String"
+		group="Display" />
+	<property
+		id="titleText"
+		title="Title"
+		type="String"
+		group="Display" />
+	<property
+		id="titleCssClass"
+		title="Title CSS Class"
+		type="String"
+		group="Display" />
+	<property
+		id="valuePrefixText"
+		title="Value Prefix"
+		type="String"
+		group="Display" />
+	<property
+		id="valuePrefixCssClass"
+		title="Value Prefix CSS Class"
+		type="String"
+		group="Display" />
+	<property
+		id="valueText"
+		title="Value"
+		type="String"
+		group="Display" />
+	<property
+		id="valueHAlign"
+		title="Value Horizontal Alignment"
+		type="String"
+		group="Display"
+	>
+		<possibleValue>left</possibleValue>
+		<possibleValue>right</possibleValue>
+	</property>
+	<property
+		id="valueCssClass"
+		title="Value CSS Class"
+		type="String"
+		group="Display" />
+	<property
+		id="valueDecimalPlaces"
+		title="Value Decimal Places"
+		type="int"
+		group="Display"
+	>
+		<possibleValue>0</possibleValue>
+		<possibleValue>1</possibleValue>
+		<possibleValue>2</possibleValue>
+		<possibleValue>3</possibleValue>
+		<possibleValue>4</possibleValue>
+		<possibleValue>5</possibleValue>
+		<possibleValue>6</possibleValue>
+		<possibleValue>7</possibleValue>
+		<possibleValue>8</possibleValue>
+		<possibleValue>9</possibleValue>
+	</property>
+	<property
+		id="valueSuffixText"
+		title="Value Suffix"
+		type="String"
+		group="Display" />
+	<property
+		id="valueSuffixCssClass"
+		title="Value Suffix CSS Class"
+		type="String"
+		group="Display" />
+	<property
+		id="footerText"
+		title="Footer"
+		type="String"
+		group="Display" />
+	<property
+		id="footerHAlign"
+		title="Footer Horizontal Alignment"
+		type="String"
+		group="Display"
+	>
+		<possibleValue>left</possibleValue>
+		<possibleValue>right</possibleValue>
+	</property>
+	<property
+		id="footerCssClass"
+		title="Footer CSS Class"
+		type="String"
+		group="Display" />
+	<property
+		id="linkText"
+		title="Text for the Link"
+		type="String"
+		group="Display"
+	>
+	</property>
+	<property
+		id="linkTooltip"
+		title="Tooltip for the Link"
+		type="String"
+		group="Display"
+	>
+	</property>
+	<property
+		id="image"
+		title="Url for the Image"
+		type="Url"
+		group="Display"
+	>
+	</property>
+	<property
+		id="imageSize"
+		title="Size of the Image"
+		type="String"
+		group="Display"
+	>
+		<possibleValue>16px</possibleValue>
+		<possibleValue>32px</possibleValue>
+		<possibleValue>64px</possibleValue>
+		<possibleValue>128px</possibleValue>
+	</property>
+	<property
+		id="onClick"
+		title="On Click"
+		type="ScriptText"
+		group="Events" />
+	<property
+		id="onLinkClick"
+		title="On Click"
+		type="ScriptText"
+		group="Events" />
+
+	<initialization>
+		<defaultValue property="WIDTH">220</defaultValue>
+		<defaultValue property="HEIGHT">190</defaultValue>
+
+		<defaultValue property="headerText">Header</defaultValue>
+		<defaultValue property="headerVisible">true</defaultValue>
+		<defaultValue property="titleText">Title</defaultValue>
+		<defaultValue property="valuePrefixText"></defaultValue>
+		<defaultValue property="valueText">Value</defaultValue>
+		<defaultValue property="valueSuffixText"> M$</defaultValue>
+		<defaultValue property="valueHAlign">left</defaultValue>
+		<defaultValue property="valueDecimalPlaces">0</defaultValue>
+		<defaultValue property="footerText">Footer</defaultValue>
+		<defaultValue property="footerHAlign">left</defaultValue>
+	</initialization>
+
+</component>
+<component
+	id="LeaderBoard"
+	title="Leader Board"
+	icon="res/lb/LeaderBoard.png"
+	handlerType="sapui5"
+	group="ScnCommunityComp"
+>
+	<jsInclude>res/lb/LeaderBoard.js</jsInclude>
+	<cssInclude>res/lb/LeaderBoard.css</cssInclude>
+
+	<property
+		id="fallbackPicture"
+		type="Url"
+		title="Fallback Picture Url"
+		tooltip="Url for Fallback Picture (must be set)"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="valuePrefix"
+		type="String"
+		title="Value Prefix Text"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="valueSuffix"
+		type="String"
+		title="Value Suffix Text"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="addCounter"
+		type="boolean"
+		title="Add Counter"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="selectedKey"
+		type="String"
+		title="Technical proprty for Selected Key"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="pressedKey"
+		type="String"
+		title="Technical proprty for Pressed Key"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="elements"
+		type="String"
+		title="Technical property for list of elements"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="onSelectionChanged"
+		type="ScriptText"
+		title="Event for On Selection Changed"
+		group="Events" />
+
+	<property
+		id="onPress"
+		type="ScriptText"
+		title="Event for On Press"
+		group="Events" />
+
+	<initialization>
+		<defaultValue property="WIDTH">230</defaultValue>
+		<defaultValue property="HEIGHT">400</defaultValue>
+		<defaultValue property="TOP_MARGIN">0</defaultValue>
+		<defaultValue property="LEFT_MARGIN">0</defaultValue>
+		<defaultValue property="RIGHT_MARGIN">auto</defaultValue>
+		<defaultValue property="BOTTOM_MARGIN">auto</defaultValue>
+		<defaultValue property="addCounter">true</defaultValue>
+		<defaultValue property="defaultImage"></defaultValue>
+		<defaultValue property="selectedKey"></defaultValue>
+		<defaultValue property="elements"></defaultValue>
+
+	</initialization>
+
+</component>
+<component
 	id="Link"
 	title="Link"
 	handlerType="sapui5"
@@ -378,6 +1136,330 @@
 		<defaultValue property="HEIGHT">20</defaultValue>
 		<defaultValue property="text">Go Sap...</defaultValue>
 	</initialization>
+</component>
+<component
+	id="MenuBar"
+	title="Menu Bar (>= 1.4)"
+	icon="res/mb/MenuBar.png"
+	handlerType="sapui5"
+	group="ScnCommunityComp"
+>
+
+	<jsInclude>res/common.js</jsInclude>
+	<jsInclude>res/mb/MenuBar.js</jsInclude>
+	<cssInclude>res/mb/menuBar.css</cssInclude>
+
+	<property
+		id="selectedKey"
+		type="String"
+		title="Technical proprty for Selected Key"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="cleanAll"
+		type="boolean"
+		title="Technical proprty for Clean All Nodes"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="elementsContent"
+		type="String"
+		title="Technical property for list of nodes"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="defaultImage"
+		title="Url for Default Image"
+		tooltip="Url for Default Image which should be shown"
+		type="Url"
+		visible="true" />
+
+	<property
+		id="onSelectionChanged"
+		type="ScriptText"
+		title="Event for On Selection Changed"
+		group="Events" />
+
+	<initialization>
+		<defaultValue property="WIDTH">400</defaultValue>
+		<defaultValue property="HEIGHT">29</defaultValue>
+		<defaultValue property="TOP_MARGIN">0</defaultValue>
+		<defaultValue property="LEFT_MARGIN">0</defaultValue>
+		<defaultValue property="RIGHT_MARGIN">auto</defaultValue>
+		<defaultValue property="BOTTOM_MARGIN">auto</defaultValue>
+		<defaultValue property="defauleImage"></defaultValue>
+		<defaultValue property="selectedKey"></defaultValue>
+		<defaultValue property="elementsContent"></defaultValue>
+
+	</initialization>
+
+</component>
+<component
+	id="MenuButton"
+	title="Menu Button (>= 1.4)"
+	icon="res/mbt/MenuButton.png"
+	handlerType="sapui5"
+	group="ScnCommunityComp"
+>
+
+	<jsInclude>res/common.js</jsInclude>
+	<jsInclude>res/mbt/MenuButton.js</jsInclude>
+	<cssInclude>res/mbt/MenuButton.css</cssInclude>
+
+	<property
+		id="text"
+		type="String"
+		title="Text Value"
+		tooltip="Button text displayed at runtime"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="tooltip"
+		type="String"
+		title="Tooltip Value"
+		tooltip="Button tooltip displayed at runtime"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="enabled"
+		title="Enabled"
+		tooltip="Switches enabled state of the control. Disabled fields have different colors and can not be focused."
+		type="boolean"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="icon"
+		title="Icon"
+		tooltip="Icon to be displayed as graphical element within the button. This can be an URI to an image or an icon font URI"
+		type="Url" />
+
+	<property
+		id="selectedKey"
+		type="String"
+		title="Technical proprty for Selected Key"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="cleanAll"
+		type="boolean"
+		title="Technical proprty for Clean All Nodes"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="elementsContent"
+		type="String"
+		title="Technical property for list of nodes"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="defaultImage"
+		title="Url for Default Image"
+		tooltip="Url for Default Image which should be shown"
+		type="Url"
+		visible="true" />
+
+	<property
+		id="onSelectionChanged"
+		type="ScriptText"
+		title="Event for On Selection Changed"
+		group="Events" />
+
+	<initialization>
+		<defaultValue property="WIDTH">400</defaultValue>
+		<defaultValue property="HEIGHT">29</defaultValue>
+		<defaultValue property="TOP_MARGIN">0</defaultValue>
+		<defaultValue property="LEFT_MARGIN">0</defaultValue>
+		<defaultValue property="RIGHT_MARGIN">auto</defaultValue>
+		<defaultValue property="BOTTOM_MARGIN">auto</defaultValue>
+
+		<defaultValue property="enabled">true</defaultValue>
+
+		<defaultValue property="defauleImage"></defaultValue>
+		<defaultValue property="selectedKey"></defaultValue>
+		<defaultValue property="elementsContent"></defaultValue>
+
+	</initialization>
+
+</component>
+<component
+	id="NotificationBar"
+	title="Notification Bar"
+	icon="res/nb/NotificationBar.png"
+	handlerType="sapui5"
+	group="ScnCommunityComp"
+>
+	<jsInclude>res/nb/NotificationBar.js</jsInclude>
+	<cssInclude>res/nb/NotificationBar.css</cssInclude>
+
+	<property
+		id="defaultImage"
+		type="Url"
+		title="Default Image - Needed for Calculation of the Url Prefix for Repository"
+		group="Display"
+		visible="true" />
+
+	<property
+		id="notifications"
+		title="Notifications"
+		tooltip="The Notifications Pushed to Client"
+		type="String"
+		visible="false" />
+
+	<property
+		id="categories"
+		title="Categories"
+		tooltip="The Notifications Pushed to Client"
+		type="String"
+		visible="false" />
+
+	<property
+		id="connectToCommonMessages"
+		title="Connect To Common Messages"
+		tooltip="Setting this to TRUE also the common Messages from messages popup will be handover to this notification bar"
+		type="boolean"
+		group="Display"
+	>
+	</property>
+
+	<property
+		id="splitNotificationsByPriority"
+		title="Split Notifications by Priority"
+		tooltip="Setting this to TRUE the Notifications will be displayed in categories by priority"
+		type="boolean"
+		group="Display"
+	>
+	</property>
+
+	<property
+		id="showOnNewNotifications"
+		title="Show Notification Bar when New Notifications are Available"
+		tooltip="Setting this to TRUE shows always Notification Bar when new Notifications are Available"
+		type="boolean"
+		group="Display"
+	>
+	</property>
+
+	<property
+		id="deleteNotificationOnClick"
+		title="Delete Notification when Clicked"
+		tooltip="Setting this to TRUE deletes the Notification on click event"
+		type="boolean"
+		group="Display"
+	>
+	</property>
+
+	<property
+		id="removeAllOnMinimize"
+		title="Remove All Notifications when Minimized"
+		tooltip="Setting this to TRUE deletes all Notifications on minimize event"
+		type="boolean"
+		group="Display"
+	>
+	</property>
+
+	<initialization>
+		<defaultValue property="WIDTH">auto</defaultValue>
+		<defaultValue property="HEIGHT">40</defaultValue>
+		<defaultValue property="TOP_MARGIN">auto</defaultValue>
+		<defaultValue property="LEFT_MARGIN">0</defaultValue>
+		<defaultValue property="RIGHT_MARGIN">0</defaultValue>
+		<defaultValue property="BOTTOM_MARGIN">0</defaultValue>
+		<defaultValue property="defaultImage"></defaultValue>
+
+		<defaultValue property="connectToCommonMessages">false</defaultValue>
+		<defaultValue property="splitNotificationsByPriority">true</defaultValue>
+		<defaultValue property="showOnNewNotifications">true</defaultValue>
+		<defaultValue property="deleteNotificationOnClick">false</defaultValue>
+		<defaultValue property="removeAllOnMinimize">false</defaultValue>
+	</initialization>
+</component>
+<component
+	id="OSMap"
+	title="Open Street Map"
+	icon="res/map/OSMap.png"
+	handlerType="div"
+	group="ScnCommunityComp"
+>
+
+	<jsInclude>res/map/OS-modestmaps-MapLib-min.js</jsInclude>
+	<jsInclude>res/map/OS-modestmaps-FollowerLib.js</jsInclude>
+
+	<jsInclude>res/map/OSMap.js</jsInclude>
+	<cssInclude>res/map/OSMap.css</cssInclude>
+
+	<property
+		id="moveTo"
+		type="String"
+		title="Technical property for move to"
+		group="Display"
+		visible="false" />
+	<property
+		id="pan"
+		type="String"
+		title="Technical property for pan"
+		group="Display"
+		visible="false" />
+	<property
+		id="panAction"
+		type="int"
+		title="Technical property for pan action"
+		group="Display"
+		visible="false" />
+	<property
+		id="moveAction"
+		type="int"
+		title="Technical property for move action"
+		group="Display"
+		visible="false" />
+	<property
+		id="zoom"
+		type="int"
+		title="Technical property for zoom"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="elementsContent"
+		type="String"
+		title="Technical property for list of nodes"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="defaultImage"
+		title="Url for Default Image"
+		tooltip="Url for Default Image which should be shown"
+		type="Url"
+		visible="true" />
+
+	<property
+		id="selectedKey"
+		type="String"
+		title="Technical proprty for Selected Key"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="onSelectionChanged"
+		type="ScriptText"
+		title="Event for On Selection Changed"
+		group="Events" />
+
+	<initialization>
+		<defaultValue property="WIDTH">600</defaultValue>
+		<defaultValue property="HEIGHT">400</defaultValue>
+
+	</initialization>
+
 </component>
 <component
 	id="Paginator"
@@ -739,6 +1821,85 @@
 	</initialization>
 </component>
 
+<component
+	id="Tree"
+	title="Tree"
+	icon="res/tr/Tree.png"
+	handlerType="sapui5"
+	group="ScnCommunityComp"
+>
+	<jsInclude>res/tr/Tree.js</jsInclude>
+	<cssInclude>res/tr/Tree.css</cssInclude>
+
+	<property
+		id="selectedKey"
+		type="String"
+		title="Technical proprty for Selected Key"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="expandedKey"
+		type="String"
+		title="Technical proprty for Expanded Key"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="cleanAll"
+		type="boolean"
+		title="Technical proprty for Clean All Nodes"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="nodesContent"
+		type="String"
+		title="Technical property for list of nodes"
+		group="Display"
+		visible="false" />
+
+	<property
+		id="defaultImage"
+		title="Url for Default Picture"
+		tooltip="Url for Default Picture which should be shown"
+		type="Url"
+		visible="true" />
+
+	<property
+		id="onSelectionChanged"
+		type="ScriptText"
+		title="Event for On Selection Changed"
+		group="Events" />
+
+	<property
+		id="onFirstExpand"
+		type="ScriptText"
+		title="Event for On First Expand"
+		group="Events" />
+
+	<property
+		id="roundtrip"
+		type="String"
+		title="Technical proprty for roundtrip"
+		group="Display"
+		visible="false" />
+
+	<initialization>
+		<defaultValue property="WIDTH">230</defaultValue>
+		<defaultValue property="HEIGHT">400</defaultValue>
+		<defaultValue property="TOP_MARGIN">0</defaultValue>
+		<defaultValue property="LEFT_MARGIN">0</defaultValue>
+		<defaultValue property="RIGHT_MARGIN">auto</defaultValue>
+		<defaultValue property="BOTTOM_MARGIN">auto</defaultValue>
+		<defaultValue property="fallbackPicture">true</defaultValue>
+		<defaultValue property="selectedKey"></defaultValue>
+		<defaultValue property="expandedKey"></defaultValue>
+		<defaultValue property="nodesContent"></defaultValue>
+
+	</initialization>
+
+</component>
 <component
 	id="ValiInput"
 	title="Validated Input Field"
